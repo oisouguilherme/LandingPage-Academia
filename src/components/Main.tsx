@@ -1,19 +1,19 @@
 export function Main() {
   return (
     <div className="bg-black bg-opacity-70 text-white py-40">
-      <div className="max-w-6xl mx-auto">
-        <div className="w-1/2 text-lg space-y-12">
-          <h1 className="text-5xl font-black">
-            DESPERTA O TEU <br /> 
-            <span className="text-red-600">LADO MAIS FEROZ</span> <br /> 
-            NA CAVERNA
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="lg:w-1/2 text-lg space-y-12">
+          <h1 className="text-4xl sm:text-5xl font-black uppercase">
+            Transforme seu <br /> 
+            <span className="text-[#a3de06]">Corpo e Sua Vida</span> <br /> 
+            no mundo fitness
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ad.
+            Emagreça, Defina e Alcance seus Objetivos Fitness com a Nossa Equipe Especializada.
           </p>
-          <div className="flex gap-12">
-            <a href="#" className="bg-red-600 px-8 py-3">Entre em contato</a>
-            <a href="#" className="px-8 py-3 border">Agende uma Visita</a>
+          <div className="flex justify-center md:justify-start flex-wrap gap-12">
+            <a href="#" className="bg-[#252060] hover:bg-blue-950 duration-300 text-white py-3 w-64 text-center">Entre em contato</a>
+            <a href="#" className="py-3 border w-64 text-center hover:bg-zinc-950 duration-300">Agende uma Visita</a>
           </div>
         </div>
       </div>

@@ -5,6 +5,8 @@ import { useState } from "react";
 
 import Link from "next/link";
 
+import { Link as LinkScroll } from "react-scroll";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,8 +22,8 @@ export default function Header() {
             <Image
               src="/logo.png"
               alt="Logo"
-              width={100}
-              height={100}
+              width={200}
+              height={200}
               className="w-12 sm:w-16"
             />
           </Link>
@@ -34,62 +36,82 @@ export default function Header() {
             onClick={toggleMenu}
           ></div>
           <div
-            className={`fixed top-0 right-0 bottom-0 bg-white z-40 w-64 transform transition-transform ease-in-out duration-300 ${
+            className={`fixed top-0 right-0 bottom-0 bg-zinc-950 z-40 w-64 transform transition-transform ease-in-out duration-300 ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            <ul className="p-8 space-y-4 text-2xl">
-              <li className="cursor-pointer text-green-900 font-medium duration-300">
+            <ul className="p-8 space-y-2 text-lg uppercase">
+              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
                 <Link href="/" onClick={toggleMenu}>
                   Página Inicial
                 </Link>
               </li>
-              <li className="cursor-pointer text-green-900 font-medium duration-300">
-                <Link href="/sobre" onClick={toggleMenu}>
+              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+                <LinkScroll smooth={true} to="SobreNos" onClick={toggleMenu}>
                   Sobre Nós
-                </Link>
+                </LinkScroll>
               </li>
-              <li className="cursor-pointer text-green-900 font-medium duration-300">
-                <Link onClick={toggleMenu} href="/projetos">
-                  Projetos
-                </Link>
+              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+                <LinkScroll
+                  smooth={true}
+                  onClick={toggleMenu}
+                  to="NossoEspaco"
+                >
+                  Nosso Espaço
+                </LinkScroll>
               </li>
-              <li className="cursor-pointer text-green-900 font-medium duration-300">
-                <Link onClick={toggleMenu} href="/noticias">
-                  Noticias
-                </Link>
+              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+                <LinkScroll
+                  smooth={true}
+                  onClick={toggleMenu}
+                  to="Modalidades"
+                >
+                  Modalidades
+                </LinkScroll>
               </li>
-              <li className="cursor-pointer text-green-900 font-medium duration-300">
-                <Link onClick={toggleMenu} href="/contato">
-                  Contato
-                </Link>
+              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+                <LinkScroll
+                  smooth={true}
+                  onClick={toggleMenu}
+                  to="Mensalidades"
+                >
+                  Mensalidades
+                </LinkScroll>
               </li>
             </ul>
           </div>
         </div>
         <div className="hidden lg:block">
           <ul className="flex space-x-12 font-medium text-center items-center text-lg">
-            <li className="cursor-pointer duration-300">
+            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
               <Link href="/">Página Inicial</Link>
             </li>
-            <li className="cursor-pointer duration-300">
-              <Link href="/sobre">Sobre Nós</Link>
+            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+              <LinkScroll smooth={true} to="SobreNos">
+                Sobre Nós
+              </LinkScroll>
             </li>
-            <li className="cursor-pointer duration-300">
-              <Link href="/projetos">Projetos</Link>
+            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+              <LinkScroll smooth={true} to="NossoEspaco">
+                Nosso Espaço
+              </LinkScroll>
             </li>
-            <li className="cursor-pointer duration-300">
-              <Link href="/noticias">Noticias</Link>
+            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+              <LinkScroll smooth={true} to="Modalidades">
+                Modalidades
+              </LinkScroll>
             </li>
-            <li className="cursor-pointer duration-300">
-              <Link href="/contato">Contato</Link>
+            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+              <LinkScroll smooth={true} to="Mensalidades">
+                Mensalidades
+              </LinkScroll>
             </li>
           </ul>
         </div>
         <div className="hamburger lg:hidden" onClick={toggleMenu}>
-          <span className="block w-6 h-1 bg-black mb-1"></span>
-          <span className="block w-6 h-1 bg-black mb-1"></span>
-          <span className="block w-6 h-1 bg-black"></span>
+          <span className="block w-6 h-1 bg-white mb-1"></span>
+          <span className="block w-6 h-1 bg-white mb-1"></span>
+          <span className="block w-6 h-1 bg-white"></span>
         </div>
       </div>
     </section>
