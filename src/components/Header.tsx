@@ -20,11 +20,11 @@ export default function Header() {
         <div className="cursor-pointer ">
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/logoCorpore.png"
               alt="Logo"
-              width={200}
-              height={200}
-              className="w-12 sm:w-16"
+              width={500}
+              height={500}
+              className="w-12 sm:w-56"
             />
           </Link>
         </div>
@@ -41,17 +41,17 @@ export default function Header() {
             }`}
           >
             <ul className="p-8 space-y-2 text-lg uppercase">
-              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+              <li className="cursor-pointer text-[#f2e61e] font-medium duration-300">
                 <Link href="/" onClick={toggleMenu}>
                   Página Inicial
                 </Link>
               </li>
-              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+              <li className="cursor-pointer text-[#f2e61e] font-medium duration-300">
                 <LinkScroll smooth={true} to="SobreNos" onClick={toggleMenu}>
                   Sobre Nós
                 </LinkScroll>
               </li>
-              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+              <li className="cursor-pointer text-[#f2e61e] font-medium duration-300">
                 <LinkScroll
                   smooth={true}
                   onClick={toggleMenu}
@@ -60,7 +60,7 @@ export default function Header() {
                   Nosso Espaço
                 </LinkScroll>
               </li>
-              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+              <li className="cursor-pointer text-[#f2e61e] font-medium duration-300">
                 <LinkScroll
                   smooth={true}
                   onClick={toggleMenu}
@@ -69,7 +69,7 @@ export default function Header() {
                   Modalidades
                 </LinkScroll>
               </li>
-              <li className="cursor-pointer text-[#a3de06] font-medium duration-300">
+              <li className="cursor-pointer text-[#f2e61e] font-medium duration-300">
                 <LinkScroll
                   smooth={true}
                   onClick={toggleMenu}
@@ -83,25 +83,25 @@ export default function Header() {
         </div>
         <div className="hidden lg:block">
           <ul className="flex space-x-12 font-medium text-center items-center text-lg">
-            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+            <li className="cursor-pointer font-bold hover:text-[#f2e61e] duration-300">
               <Link href="/">Página Inicial</Link>
             </li>
-            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+            <li className="cursor-pointer font-bold hover:text-[#f2e61e] duration-300">
               <LinkScroll smooth={true} to="SobreNos">
                 Sobre Nós
               </LinkScroll>
             </li>
-            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+            <li className="cursor-pointer font-bold hover:text-[#f2e61e] duration-300">
               <LinkScroll smooth={true} to="NossoEspaco">
                 Nosso Espaço
               </LinkScroll>
             </li>
-            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+            <li className="cursor-pointer font-bold hover:text-[#f2e61e] duration-300">
               <LinkScroll smooth={true} to="Modalidades">
                 Modalidades
               </LinkScroll>
             </li>
-            <li className="cursor-pointer font-bold hover:text-[#a3de06] duration-300">
+            <li className="cursor-pointer font-bold hover:text-[#f2e61e] duration-300">
               <LinkScroll smooth={true} to="Mensalidades">
                 Mensalidades
               </LinkScroll>
